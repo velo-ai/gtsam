@@ -154,6 +154,8 @@ virtual class SmartProjectionPoseFactor : gtsam::NonlinearFactor {
 
   void add(const gtsam::Point2& measured_i, size_t poseKey_i);
 
+  gtsam::TriangulationResult point() const;
+
   // enabling serialization functionality
   void serialize() const;
 };
